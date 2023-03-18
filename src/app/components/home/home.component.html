@@ -1,0 +1,255 @@
+    <!----------------- Button UP  -------------------- -->
+
+<button class="bg-danger py-2 px-3 border-0 rounded-circle text-white" id="btnUp">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+    <!----------------- LOODING Screen -------------------- -->
+<section id="loading" class="justify-content-center align-items-center">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div>
+</section>
+  <!------------------------ Srart Nav ------------------------->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container d-flex">
+
+        <a class="navbar-brand" href="#home"><img src="../../../assets/images/Logo.svg"class="logo" alt=""></a>
+        <div class="navbar-toggler"(click)="toggleMode()">
+
+              <i class="fas fa-toggle-on fa-2x" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" *ngIf="isToggle"></i>
+              <i class="fas fa-toggle-off fa-2x" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" *ngIf="!isToggle"></i>
+
+        </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+          <a class="nav-link active" aria-current="page" href="#services">SERVICES</a>
+          <a class="nav-link active" aria-current="page" href="#work">WORK</a>
+          <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
+
+          <div class="theme-container d-flex  rounded-pill px-2 py-1">
+            <div class="mode rounded-circle p-2 mx-1" (click)="lightMode()" id="light">
+                <span>🌞</span>
+            </div>
+            <div class="mode rounded-circle p-2 mx-1" (click)="darkMode()" id="dark">
+                <span>🌑</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+   <!------------------------ End Nav ------------------------->
+ 
+   <!------------------------- Start Home --------------->
+
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="font_h1">Creative Product <br>
+          Designer & Front-End Developer <span class="h4">🔮 ✨</span></h1>
+        <div class="row">
+          <p class="font_p text-muted mt-3 col-10">Hello, i'm Magdy and i'm a ui/ux designer and a front-end developer with the passion of creativity</p>
+          <div class="col-2"></div>
+        </div>
+         <a href="#work">
+          <button class="btn btn-danger w-50 py-3">
+            <span class="h5 float-left ml-2">My Work</span>
+            <span><i class="fas fa-arrow-down float-right fa-1x mr-2 mt-2"></i></span>
+          </button>
+         </a>
+      </div>
+      <div class="col-lg-6 mt-5">
+        <ng-lottie [options]='options'>        
+        </ng-lottie>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!---------------------------- End Home  --------------------->
+
+   <!------------------------- Start Services  --------------->
+<section id="services" class="SocendBg">
+    <div class="container">
+      <h2 class="font_h2 text-center">What I Do</h2>
+      <p class="font_p text-center">Design, development, and strategy <span class="h5">🧙🏻‍♂️</span></p>
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="p-4 custom_border Bg_Main mt-3">
+            <i class="fa fa-code fa-2x p-3 custom_border25 text-white my-2 A"></i>
+            <h2 class="my-3">Front-end Developer</h2>
+            <p class="font_desc">Being able to build the designs I produce means I can bring your idea to life. It also means I don't design anything that can't technically be created.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 custom_border Bg_Main mt-3">
+            <i class="fas fa-cogs fa-2x p-3 custom_border25 text-white my-2 B"></i>
+            <h2 class="my-3">Back-end Developer</h2>
+            <p class="font_desc">There’s no style without back-end here. I bring together form and the function to create something that looks good and performs brilliantly, and easy to use</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+   <!------------------------- Start Services  --------------->
+
+   <!------------------------- Start Principles  --------------->
+
+<section id="principles">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-lg-8">
+
+          <h2 class="font_h2">Principles</h2>
+          <p class="font_p">Create products your users will want to use <span class="h5">🤙</span></p>
+          <div class="row">
+
+            <div class="col-lg-6 mt-1">
+              <div class="princ_item">
+                <i class="fas fa-magic A custom_border25 p-3 text-white fa-2x my-3"></i>
+                <h5 class="mb-2 font-weight-bold">Clean ­– In thinking, in style.</h5>
+                <p class="font_desc">Clean code fuss-free interfaces and expert execution, design as it should be.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-1">
+              <div class="princ_item">
+                <i class="fas fa-rocket B custom_border25 p-3 text-white fa-2x my-3"></i>
+                <h5 class="mb-2 font-weight-bold">Effectiveness</h5>
+                <p class="font_desc">Responsive is not only screen size. Leverage technology to help users.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-1">
+              <div class="princ_item">
+                <i class="fas fa-handshake C custom_border25 p-3 text-white fa-2x my-3"></i>
+                <h5 class="mb-2 font-weight-bold">Clarity</h5>
+                <p class="font_desc">Give users responses to the actions they take. avoid paradox of choice.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-1">
+              <div class="princ_item">
+                <i class="fas fa-magic D custom_border25 p-3 text-white fa-2x my-3"></i>
+                <h5 class="mb-2 font-weight-bold">Consistency</h5>
+                <p class="font_desc">Re-use well-tested design patterns. Use ubiquitous language to create familiarity.
+
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 pt-5 mt-5">
+          <ng-lottie [options]='options2'>
+
+          </ng-lottie>
+        </div>
+    </div>
+  </div>
+</section>
+<!------------------------- Start Principles  --------------->
+
+<!-------------------------- Start My Work ------------------------->
+
+<section id="work" class=" SocendBg">
+    <div class="container">
+      <div class="text-center">
+        <h3 class="font_h2">My Work</h3>
+        <p class="font_p">Download and review some of my work <span class="h5">🏋️‍♂️</span></p>
+      </div>
+      
+      <div class="row">
+
+        <div class="col-lg-6 mt-2">
+          <div class="work_item custom_border Bg_Main p-2">
+              <div class="work-img">
+                <img src="assets/images/21.png" class="img-fluid custom_border" alt="">
+              </div>
+              <p class="item_p ml-3 mt-3">FRONT-END</p>
+              <h5 class="mb-1 font-weight-bold ml-3">Note - Online notes app</h5>
+              <p class="font_desc ml-3">Have online notes to note your notes to remenber them in order to do , you can register now and have a free online notes </p>
+              <a href="https://sticky-note4-app.netlify.app" target="_blank" class="text-decoration-none ml-3 item_p2">LIVE PREVIEW 🔥</a>
+          </div> 
+        </div>
+
+        <div class="col-lg-6 mt-2">
+          <div class="work_item custom_border Bg_Main p-2">
+              <div class="work-img">
+                <img src="assets/images/22.png" class="img-fluid custom_border" alt="">
+              </div>
+              <p class="item_p ml-3 mt-3">FRONT-END</p>
+              <h5 class="mb-1 font-weight-bold ml-3">Movies - Trending movies app</h5>
+              <p class="font_desc ml-3">Now you can see the trending Movies and Series and watch it in one website just sign up first and then you can wath what you want</p>
+              <a href="https://trending-movies-app.netlify.app" target="_blank" class="text-decoration-none ml-3 item_p2">LIVE PREVIEW 🔥</a>
+          </div> 
+        </div>
+
+
+      </div>
+    </div>
+</section>
+
+<!-------------------------- End My Work ------------------------->
+
+
+
+<!----------------------------- Start Contact ----------------->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <ng-lottie [options]="contact">
+
+        </ng-lottie>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="font_h1">Ready To Get Started?</h3>
+        <p class="font_p">Feel free to contact me <span class="h5">😃</span></p>
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <label class="cus_label">first Name</label>
+              <input type="text" class=" cus_input" placeholder="ex.Walter" (click)="inputt()">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <label class="cus_label">Last Name</label>
+              <input type="text" class=" cus_input" placeholder="ex.White" (click)="inputt()">
+            </div>
+          </div>
+        </div>
+        <div>
+          <label class="cus_label">email address</label>
+          <input type="text" class=" cus_input" placeholder="ex.jodi@gmail.com" (click)="inputt()">
+        </div>
+        <div>
+          <label class="cus_label">first Name</label>
+          <textarea type="text" class=" cus_input" placeholder="Write your message here"  cols="30" rows="2"></textarea>
+        </div>
+      <button class="submit" class="btn btn-info mt-3 py-2 w-25 float-right A"><span class="h5">Send</span></button>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!----------------------------- End Contact ----------------->

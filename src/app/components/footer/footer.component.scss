@@ -1,0 +1,53 @@
+.w-cus{
+    width:3.2%;
+}
+
+.social-icon{
+    width: 2.5rem;
+    height:2.5rem;
+    border: 2px solid #0078ff;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.social-icon {
+    transition: 0.6s all;
+}
+// .social-icon:hover{
+    
+//     background-color:#0078ff;
+//     border-color: #CDE1F8;
+//     cursor: pointer;
+// }
+// .social-icon a i{
+//     transition: 0.6s all;
+
+// }
+// .social-icon:hover .social-icon a i{
+//     color:#fff;
+
+// }
+
+
+
+        //Responsive
+        @media all and (max-width:600px){ //sm
+            .w-cus{
+                width:6%;
+            }  
+        }
+
+        @media all and (min-width:601px) and (max-width:768px){ //md
+            .w-cus{
+                width:5%;
+            }  
+        }
+
+        @media all and (min-width:769px) and (max-width:992px){ //lg
+            .w-cus{
+                width:4%;
+            }  
+        }
+        
+        
+        
